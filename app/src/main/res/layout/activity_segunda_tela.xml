@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".SegundaTela">
+
+    <!-- Mensagem no topo -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@color/purple_200"
+        android:text="Escolha uma opção:"
+        android:textSize="40sp" />
+
+    <!-- Botão para resetar cor para branco (centralizado verticalmente) -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurar"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/messageTextView"
+        android:layout_marginTop="175dp"
+        android:textSize="25sp"/>
+
+    <!-- Botão vermelho (centralizado verticalmente abaixo do botão reset) -->
+    <Button
+        android:id="@+id/redButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vermelho"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_below="@id/resetButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <!-- Botão verde (centralizado verticalmente abaixo do botão vermelho) -->
+    <Button
+        android:id="@+id/greenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:layout_below="@id/redButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <!-- Botão azul (centralizado verticalmente abaixo do botão verde) -->
+    <Button
+        android:id="@+id/blueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_below="@id/greenButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <!-- Botão cor aleatória (centralizado verticalmente abaixo dos três botões de cores) -->
+    <Button
+        android:id="@+id/randomColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor aleatória"
+        android:backgroundTint="@color/gray"
+        android:textColor="@color/black"
+        android:layout_below="@id/blueButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <!-- Botão de navegação para a proxima tela (canto inferior direito) -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avancar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/purple_500"/>
+
+    <!-- Botão de navegação de volta para a tela anterior (canto inferior esquerdo) -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/purple_500"/>
+</RelativeLayout>
